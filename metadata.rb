@@ -4,7 +4,7 @@ maintainer_email 'you@example.com'
 license 'All Rights Reserved'
 description 'Installs/Configures django-git'
 long_description 'Installs/Configures django-git'
-version '0.1.0'
+version '0.1.8'
 chef_version '>= 13.0'
 
 depends 'poise-python', '~> 1.7.0'
