@@ -11,8 +11,9 @@ describe package('python3') do
 end
 
 #Check pip installation
-describe command('pip --version') do
-  its('stdout') { should match 'pip 18.0' }
+describe pip('pip') do
+  it { should be_installed }
+  its('version') { should eq '18.0' }
 end
 
 #Check django installation

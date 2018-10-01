@@ -1,9 +1,9 @@
-name 'django-git'
+name 'django-cookbook'
 maintainer 'The Authors'
 maintainer_email 'you@example.com'
 license 'All Rights Reserved'
-description 'Installs/Configures django-git'
-long_description 'Installs/Configures django-git'
+description 'Installs/Configures django-cookbook'
+long_description 'Installs/Configures django-cookbook'
 version '0.1.8'
 chef_version '>= 13.0'
 
