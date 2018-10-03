@@ -8,10 +8,17 @@
 #Check python installation
 describe package('python3') do
   it { should be_installed }
+  its('version') {should match '3.5'}
 end
 
 #Check pip installation
 describe pip('pip') do
   it { should be_installed }
   its('version') { should eq '18.0' }
+end
+
+#Check django installation
+describe pip('django') do
+  it {should be_installed}
+  its('version') { should match ('2.2') }
 end
