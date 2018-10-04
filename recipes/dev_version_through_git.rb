@@ -19,5 +19,5 @@ end
 execute 'install from /root/django-dev' do
   command 'pip install -e /root/django-dev'
   cwd '/root/django-dev'
-  creates '//usr/local/bin/django-admin.py'
+  creates '/usr/local/bin/django-admin.py'
 end
