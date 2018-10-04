@@ -6,7 +6,7 @@
 
 #Install python3 and latest pip version == python 3.5 pip 18.0
 python_runtime 'install_python3.5' do
-	version '3.5'
+  version '3.5'
   options pip_version: true
 end
 
@@ -19,4 +19,5 @@ end
 execute 'install from /root/django-dev' do
   command 'pip install -e /root/django-dev'
   cwd '/root/django-dev'
+  creates '//usr/local/bin/django-admin.py'
 end
