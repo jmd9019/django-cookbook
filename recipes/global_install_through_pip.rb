@@ -5,9 +5,11 @@
 # Copyright:: 2018, The Authors, All Rights Reserved.
 
 #Install python3 and latest pip version == python 3.5 pip 18.0
-python_runtime '3' do
-  options pip_version: true
-end
+#python_runtime '3' do
+#  options pip_version: true
+#end
+
+include_recipe '::install_python_and_pip'
 
 #Install django through pip
 python_package 'Django' do
